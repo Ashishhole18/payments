@@ -31,6 +31,8 @@ public class EmployeeController {
     @PostMapping(value = "/create-employee")
     public ResponseEntity createEmployee(@RequestBody EmployeeResource employeeResource) {
         EmployeeResponse employeeResponse = this.employeeService.createEmployee(employeeResource);
+        String str= new String("KI");
+        StringBuffer buffer = new StringBuffer("Hi");
         return ResponseEntity.ok(employeeResponse);
     }
 
