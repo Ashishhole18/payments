@@ -15,7 +15,4 @@ node{
     Payments''', cc: '', from: '', replyTo: '', subject: 'Jenkin Job', to: 'ashish.holey56@gmail.com'
 
     }
-
-
-
 }
