@@ -17,9 +17,10 @@ node{
     }
     stage('Slack-Notification') {
 
-    slackSend channel: '#payments-offocial-jenkins-job',
+    slackSend baseUrl: 'https://hooks.slack.com/services/',
+    channel: '#payments-offocial-jenkins-job',
     color: 'good',
-    message: 'Payments-jenkins-job Messages',
+    message: 'Hello Build has ended',
     tokenCredentialId: 'slack-demo'
     }
 }
