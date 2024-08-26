@@ -15,4 +15,11 @@ node{
     Payments''', cc: '', from: '', replyTo: '', subject: 'Jenkin Job', to: 'ashish.holey56@gmail.com'
 
     }
+    stage('Slack-Notification') {
+
+    slackSend channel: '#payments-offocial-jenkins-job',
+    color: 'good',
+    message: 'Payments-jenkins-job Messages',
+    tokenCredentialId: 'slack-demo'
+    }
 }
