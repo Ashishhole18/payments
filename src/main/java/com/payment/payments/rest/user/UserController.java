@@ -1,7 +1,7 @@
 package com.payment.payments.rest.user;
 
 import com.payment.payments.security.jwt.JwtUtils;
-import com.payment.payments.user.UserResource;
+import com.payment.payments.commons.ecommerce.user.UserResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.payment.payments.user;
+package com.payment.payments.commons.ecommerce.user;
 
 import lombok.*;
 
