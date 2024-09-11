@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PATh = "/maven/bin:#PATH"
+        PATH = "/maven/bin:$PATH"
 
     }
     stages {
