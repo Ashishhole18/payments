@@ -1,9 +1,6 @@
 pipeline {
     agent any
-    environment {
-        PATH = "/maven/bin:$PATH"
-
-    }
+    
     stages {
         stage('GIT CLONE') {
             steps {
