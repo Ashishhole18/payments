@@ -9,7 +9,8 @@ pipeline {
         }
         stage('Package Application') {
             steps {
-                sh 'mvn clean package'
+                Foo = tool name: 'maven', type: 'maven'
+                sh "${Foo}/bin/mvn clean package"
             }
         }
         stage('Docker Image') {
