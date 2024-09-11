@@ -10,12 +10,12 @@ pipeline {
         }
         stage('Package Application') {
             steps {
-                sh 'mvn clean'
+                sh 'mvn clean verify'
             }
         }
         stage('Docker Image') {
             steps {
-                sh 'docker build it payments-docker-image .'
+                sh 'docker build -it payments-docker-image .'
 
             }
         }
