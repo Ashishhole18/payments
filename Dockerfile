@@ -1,3 +1,5 @@
+FROM openjdk:17
+MAINTAINER Ashish Hole "your@email.com"
 
 # Set the working directory inside the container
 WORKDIR /app
