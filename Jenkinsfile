@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+    label 'tempo'
+    }
 
     stages {
         stage('GIT CLONE') {
