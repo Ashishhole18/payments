@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Docker Image') {
             steps {
-                sh 'docker build -it payments-docker-image .'
+                sh 'docker build . -t payment-docker-image'
 
             }
         }
