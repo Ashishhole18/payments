@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+
     stages {
         stage('GIT CLONE') {
             steps {
@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Package Application') {
             steps {
-                sh 'mvn clean verify'
+                sh 'mvn -T 1C package'
             }
         }
         stage('Docker Image') {
