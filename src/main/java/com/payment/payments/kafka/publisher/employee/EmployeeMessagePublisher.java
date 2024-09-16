@@ -11,7 +11,7 @@ public class EmployeeMessagePublisher implements KafkaProducer<EmployeeMessage>{
     private final KafkaTemplate<String, EmployeeMessage> kafkaTemplate;
     private final String employeePublisherTopic;
 
-    @Autowired
+    @Autowired(required = false)
     public EmployeeMessagePublisher(KafkaTemplate<String, EmployeeMessage> kafkaTemplate,
                                     @Value("${student.publisher.topic}") String employeePublisherTopic) {
         this.kafkaTemplate = kafkaTemplate;

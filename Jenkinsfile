@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker run -d -p 8080:8080 payment-docker-image'
+                sh 'docker run -d -p 9090:9090 payment-docker-image'
             }
         }
 
